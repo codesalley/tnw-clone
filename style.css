@@ -68,8 +68,6 @@ a {
   padding: 15px;
 }
 
-
-
 .grid-article-1 {
   grid-column: 1/2;
   grid-row: 1/3;
@@ -82,36 +80,123 @@ a {
   padding: 2%;
   flex-direction: column;
   justify-content: space-between;
-  backface-visibility: visible;
-  box-shadow: inset -3em -3em 3em 1em rgb(251, 255, 9);
+  box-shadow: inset -5em -20em 9em -2em rgba(0, 0, 0, 0.685);
 }
 
-.grid-article-1 li a{
-    color: rgb(199, 198, 198);
-    font-size: 90%;
+.grid-article-1 li a {
+  color: rgb(187, 184, 184);
+  font-size: 90%;
+  opacity: 0.5;
 }
 
-.grid-article-1 i{
-    color: rgb(199, 198, 198);
+.grid-article-1 i {
+  color: rgb(187, 184, 184);
+  opacity: 0.5;
 }
 
 .grid-article-2 {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
+  padding: 2%;
   color: white;
+  box-shadow: inset -5em -20em 9em -2em rgba(0, 0, 0, 0.685);
   background-image: url(./assets/header-grid-img/Eye-strain-screen-time-hed-796x419.jpg);
+}
+
+.article-cover h5 {
+  font-weight: 200;
+  letter-spacing: 5px;
+  opacity: 0.5;
+}
+
+.article-cover h2 {
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.7;
+}
+
+.get-update a {
+  color: #ff1e00;
+  padding: 10px;
+}
+
+.title {
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.price h4 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.on-price {
+    opacity: 0.8;
+}
+
+.price h5 {
+  font-weight: 100;
+  font-size: 15px;
+  opacity: 0.5;
 }
 
 .grid-article-3 {
   grid-column: 2/3;
   grid-row: 2/3;
+  color: white;
+  padding: 2%;
   display: flex;
   background-image: url(./assets/header-grid-img/Galaxy-hed-796x419.jpg);
 }
 
+.cat-icon .first,
+.cat-icon .second {
+  display: flex;
+  padding: 2%;
+  gap: 10px;
+  color: rgb(53, 51, 51);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.first h5,
+.second h5 {
+  font-size: 14px;
+}
+
+.cat-icon {
+  padding-bottom: 10%;
+  padding: 2%;
+}
+
+.fund-details {
+  padding-top: 10%;
+  border-top: 2px solid #ff1e0050;
+  opacity: 0.7;
+  font-weight: 200;
+}
+
+.make-me-thin {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
 .article-cover {
   align-self: flex-end;
+}
+
+.card-line {
+  display: flex;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.section-items li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .section-items,
@@ -129,8 +214,11 @@ a {
 }
 
 .story-card {
-  border: 1px solid black;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
 }
 
 .funding-img {
@@ -142,8 +230,9 @@ a {
 .funding-card {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 270px;
   background-color: #fffaf8;
+  margin-bottom: 2%;
 }
 
 .title {
@@ -162,13 +251,51 @@ a {
   align-items: center;
 }
 
+.date {
+  text-align: end;
+  color: rgb(231, 229, 229);
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.article-items i {
+  opacity: 0.5;
+}
+
+.story-card-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+}
+
+.story-card img {
+  max-width: 100%;
+}
+
+.secion-header {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ff1e00;
+  margin: 1% 0 1% 0;
+}
+
 .article-items {
-    display: flex;
-    gap: 1%;
+  display: flex;
+  gap: 1%;
+  color: white;
+}
+
+.article-items li a {
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 .get-update {
   display: flex;
+  justify-content: space-evenly;
   padding: 40px 0px 40px 0px;
 }
 
@@ -179,12 +306,101 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 
-.heading-article {
+.c1 {
   width: 100%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 250px;
   background-image: url(./assets/hard-folk-section/Trump-Twitter-368x276.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/apps-section/android-auto-language-ev-future-car-infotainment-car-play-carplay-android-phone-368x276.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/gear-section/Eye-strain-screen-time-hed-368x276.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c4{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/tech-section/featured-730x432.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c5{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/creative-section/Untitled-design-13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c6{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/podium-section/open-source-code-gq-368x276.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c7{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/insights-section/Galaxy-hed-368x276.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c8{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/launch-section/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c9{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
+  background-image: url(./assets/distract-section/stellaris_hearts-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -244,6 +460,9 @@ a {
 
 .off-price {
   text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0.5;
 }
 
 .footer-section {
@@ -266,6 +485,11 @@ a {
   gap: 1%;
 }
 
+.section-header {
+  color: #ff1e00;
+  padding: 5% 0 5% 0;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -285,6 +509,12 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.deal-title {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
 }
 
 footer {
