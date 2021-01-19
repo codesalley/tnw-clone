@@ -18,6 +18,10 @@
   gap: 12px;
 }
 
+.left-nav-li , .right-nav-li{
+    opacity: 0.5;
+}
+
 li,
 a {
   text-decoration: none;
@@ -278,8 +282,11 @@ a {
   font-size: 30px;
   font-weight: bolder;
   color: #ff1e00;
+  opacity: 0.8;
   margin: 1% 0 1% 0;
 }
+
+
 
 .article-items {
   display: flex;
@@ -533,6 +540,7 @@ footer {
 
 .bottom-stite-map a {
   color: white;
+  opacity: 0.5;
   display: flex;
 }
 
@@ -564,3 +572,36 @@ footer {
   font-weight: bold;
   font-size: 64px;
 }
+
+/* hover tricks */
+
+.section-header:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.social-icon i:hover {
+    border: 1px solid rgb(44, 44, 44);
+    background-color: black;
+}
+
+.bottom-stite-map a:hover {
+    opacity: 1;
+}
+
+/* resonsive design  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
