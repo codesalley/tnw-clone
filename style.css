@@ -688,6 +688,7 @@ footer {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    gap: 50px;
   }
   .social-icons {
     display: flex;
@@ -735,18 +736,54 @@ footer {
     color: white;
   }
   .story-card {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 1fr 1fr;
+    gap: 5%;
     height: 10vh;
   }
   .story-card img{
-    max-width: 30%;
-    height: 10vh;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    max-width: 100%;
+    height: 9vh;
   }
   .story-card h4{
-    font-size: 18px;
+    grid-column: 2/3;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: 100%;
+    opacity: 0.8;
   }
- 
+  .card-line {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    gap: 3%;
+    font-size: 13px;
+  }
+
+  .funding-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .get-update {
+    padding: 0;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  
+  .deal-item img{
+    float: left;
+    width: 30%;
+    padding-right: 3%;
+  }
+.deal-item {
+  padding: 2%;
+}
 
 }
 
