@@ -53,6 +53,7 @@ a {
   top: 0;
   z-index: 50;
   background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
 }
 
 .category-nav-left-ul {
@@ -209,13 +210,6 @@ a {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
-}
-
-.latest-news,
-.funding-section,
-.category-section,
-.latest-deals-section {
-  padding: 0 10% 0 10%;
 }
 
 .story-card {
@@ -588,10 +582,66 @@ footer {
   opacity: 1;
 }
 
+.left-nav-li:hover,
+.right-nav-li:hover {
+  opacity: 1;
+}
+
 /* resonsive design  */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .site-nav,
+  .category-nav-left-ul,
+  .date,
+  .article-cover h5 {
+    display: none;
+  }
+  .trending-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 1%;
+  }
+  .grid-article-1,
+  .grid-article-2,
+  .grid-article-3 {
+    width: 100%;
+    min-height: 30vh;
+    display: inline-block;
+  }
+  .article-cover-g1 h2,
+  .grid-article-2 h2,
+  .grid-article-3 h2 {
+    font-size: 100%;
+  }
+  .latest-news {
+    margin: 60% 5% 0 5%;
+  }
+  .section-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-cards-grid {
+    padding: 0%;
+    margin: 1%;
+  }
+  .funding-cards-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .social-icons {
+    display: flex;
+    flex-basis: 2%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -604,6 +654,12 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .latest-news,
+  .funding-section,
+  .category-section,
+  .latest-deals-section {
+    padding: 0 10% 0 10%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
