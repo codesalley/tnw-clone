@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "ARS Maquette" ,"Helvetica Neue" ,Arial,sans-serif;
 }
 
 .site-nav {
@@ -11,6 +11,16 @@
   background-color: black;
   padding: 8px 0;
 }
+
+.latest-news,
+.funding-section,
+.category-section,
+.latest-deals-section {
+  padding: 0%;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
 
 .left-ul,
 .right-ul {
@@ -86,7 +96,7 @@ a {
   padding: 2%;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: inset -5em -20em 9em -2em rgba(0, 0, 0, 0.685);
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .grid-article-1 li a {
@@ -107,7 +117,7 @@ a {
   padding: 2%;
   color: white;
   background-size: cover;
-  box-shadow: inset -5em -20em 9em -2em rgba(0, 0, 0, 0.685);
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
   background-image: url(./assets/header-grid-img/Eye-strain-screen-time-hed-796x419.jpg);
 }
 
@@ -155,6 +165,7 @@ a {
   color: white;
   padding: 2%;
   display: flex;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
   background-size: cover;
   background-image: url(./assets/header-grid-img/Galaxy-hed-796x419.jpg);
 }
@@ -308,6 +319,12 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 
+.article-header h4{
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
 .c1 {
   width: 100%;
   display: flex;
@@ -317,6 +334,7 @@ a {
   background-image: url(./assets/hard-folk-section/Trump-Twitter-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c2 {
@@ -328,6 +346,7 @@ a {
   background-image: url(./assets/apps-section/android-auto-language-ev-future-car-infotainment-car-play-carplay-android-phone-368x276.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c3 {
@@ -339,6 +358,7 @@ a {
   background-image: url(./assets/gear-section/Eye-strain-screen-time-hed-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c4 {
@@ -350,6 +370,7 @@ a {
   background-image: url(./assets/tech-section/featured-730x432.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c5 {
@@ -361,6 +382,7 @@ a {
   background-image: url(./assets/creative-section/Untitled-design-13.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c6 {
@@ -372,6 +394,7 @@ a {
   background-image: url(./assets/podium-section/open-source-code-gq-368x276.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c7 {
@@ -383,6 +406,7 @@ a {
   background-image: url(./assets/insights-section/Galaxy-hed-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c8 {
@@ -394,6 +418,7 @@ a {
   background-image: url(./assets/launch-section/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c9 {
@@ -405,10 +430,7 @@ a {
   background-image: url(./assets/distract-section/stellaris_hearts-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.article-header {
-  color: white;
+  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .float-article {
@@ -589,14 +611,19 @@ footer {
   opacity: 1;
 }
 
+
 /* resonsive design  */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 763px and down) */
+@media only screen and (max-width: 763px) {
   .main-section {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .see-more {
+    display: none;
   }
 
   .site-nav,
@@ -607,24 +634,25 @@ footer {
   }
 
   .mobile-nav {
-    height: 5vh;
-  }
-
-  .mobile-nav {
     display: flex;
     justify-content: space-between;
+    height: 6vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 54;
   }
 
   .mob-nav-right {
     margin-right: 8%;
     display: flex;
-    gap: 30%;
+    gap: 10%;
     align-items: center;
     justify-content: start;
   }
 
   .mobile-nav img {
-    padding: 3%;
+    padding: 10px;
     width: 30%;
     border: 1px solid black;
     background-color: black;
@@ -632,7 +660,13 @@ footer {
 
   .mob-nav-right .fa-search {
     opacity: 0.7;
-    transform: scale(0.8);
+    transform: scale(0.7);
+  }
+
+  .mob-nav-right i:first-child {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 10px 10px 10px 10px;
   }
 
   .mob-nav-right .fa-bars {
@@ -644,8 +678,7 @@ footer {
   .trending-section {
     display: flex;
     flex-direction: column;
-    margin: 1%;
-    padding: 1%;
+
   }
   .grid-article-1,
   .grid-article-2,
@@ -666,7 +699,7 @@ footer {
   }
 
   .latest-news {
-    margin: 60% 5% 0 5%;
+    margin: 40% 5% 0 5%;
   }
 
   .funding-section,
@@ -727,28 +760,31 @@ footer {
   .grid-article-3 {
     display: flex;
     justify-content: flex-end;
-    padding: 5%;
+    padding: 15px;
+    opacity: 1;
+    color: white;
   }
   .grid-article-1 h2,
   .grid-article-2 h2,
   .grid-article-3 h2 {
     font-size: 22px;
     color: white;
+    opacity: 1;
   }
   .story-card {
     display: grid;
     grid-template-columns: 30% auto;
     grid-template-rows: 1fr 1fr;
-    gap: 5%;
+    gap: 3%;
     height: 10vh;
   }
-  .story-card img{
+  .story-card img {
     grid-column: 1/2;
     grid-row: 1/3;
     max-width: 100%;
     height: 9vh;
   }
-  .story-card h4{
+  .story-card h4 {
     grid-column: 2/3;
     font-size: 15px;
     font-weight: 700;
@@ -775,36 +811,181 @@ footer {
     flex-direction: column-reverse;
     gap: 15px;
   }
-  
-  .deal-item img{
+
+  .deal-item img {
     float: left;
     width: 30%;
     padding-right: 3%;
   }
-.deal-item {
-  padding: 2%;
+  .deal-item {
+    padding: 2%;
+  }
+  .bottom-footer {
+    width: 100%;
+  }
 }
 
-}
+/* 763px devices and up  */
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-}
+  .mobile-nav {
+    display: none;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+  .story-card {
+    height: 250px;
+  }
+
+  .article-cover-g1 h2 {
+    font-size: 35px;
+
+    font-weight: 700;
+    color: white;
+    opacity: 1;
+  }
+  .article-cover h2 {
+    color: white;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .trending-section {
+    height: 50vh;
+  }
+
+  .section-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+
+  .story-card-title {
+    font-size: 100%;
+  }
+
+  .article-cover,
+  .article-cover-g1 {
+    padding: 4%;
+  }
+
   .latest-news,
   .funding-section,
   .category-section,
   .latest-deals-section {
-    padding: 0 10% 0 10%;
+    padding: 0 2% 0 2%;
+    max-width: 1192px;
+    margin: 0 auto;
+  }
+
+  .funding-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .get-update {
+    padding: 0;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .get-update li:first-child,
+  .get-update li:nth-child(2) {
+    border-right: 1px solid #ff1e00;
+  }
+
+  .category-section {
+    padding-top: 2%;
+    margin-bottom: 35%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+
+  .article-header {
+    padding: 10px;
+    color: white;
+  }
+  .ld-heading {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .see-more {
+    align-self: center;
+    color: #ff1e00;
+  }
+
+  .deals-list {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
+
+@media only screen and (max-width: 1024px)  {
+  .hide-at-767 {
+    display: none;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 1023pxand up) */
+@media only screen and (min-width: 1024px) {
+  .latest-news,
+  .funding-section,
+  .category-section,
+  .latest-deals-section {
+    max-width: 1192px;
+    margin: 0 auto;
+  }
+
+
+
+  .latest-news{
+    margin-top: 40px;
+  }
+
+  .deals-list {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+
+  .section-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  }
+
+  .category-section {
+    display: grid;
+    gap: 2%;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+  .latest-news {
+    margin: 0;
+  }
+
+  .trending-section {
+    height: 65vh;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+  .latest-news,
+  .funding-section,
+  .category-section,
+  .latest-deals-section {
+    padding: 0%;
+    max-width: 1192px;
+    margin: 0 auto;
+  }
+  .latest-deals-section {
+    margin-top: 5%;
+  }
 }
