@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://juxsalley.github.io/tnw-clone/)
 
 working on this project, you will learn the basic use of css flex-box and css grid and how to use it's adantages to layout elements on a web page and make it responsive
 
