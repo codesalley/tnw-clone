@@ -202,7 +202,6 @@ a {
 }
 
 .fund-details {
-  padding-top: 10%;
   border-top: 2px solid #ff1e0050;
   opacity: 0.7;
   font-weight: 200;
@@ -320,7 +319,7 @@ a {
 }
 
 .category-section {
-  padding-top: 2%;
+  padding-top: 2px;
   display: grid;
   gap: 2px;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -525,6 +524,7 @@ a {
   justify-content: center;
   gap: 10%;
 }
+
 .bottom-footer {
   height: 70px;
   background-color: black;
@@ -747,7 +747,7 @@ footer {
     color: white;
     opacity: 1;
   }
-  
+
   .story-card {
     display: grid;
     grid-template-columns: 30% auto;
@@ -784,6 +784,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .get-update {
     padding: 0;
     margin-bottom: 2%;
@@ -805,7 +806,6 @@ footer {
   .bottom-footer {
     width: 100%;
   }
-
 }
 
 /* 763px devices and up  */
@@ -916,7 +916,6 @@ footer {
   .hide-at-767 {
     display: none;
   }
-
 }
 
 /* Large devices (laptops/desktops, 1023pxand up) */
@@ -955,7 +954,6 @@ footer {
   .trending-section {
     height: 65vh;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -972,5 +970,4 @@ footer {
   .latest-deals-section {
     margin-top: 5%;
   }
-
 }
