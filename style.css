@@ -315,7 +315,7 @@ a {
 .get-update {
   display: flex;
   justify-content: space-evenly;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0 40px 0;
 }
 
 .category-section {
@@ -821,7 +821,6 @@ footer {
 
   .article-cover-g1 h2 {
     font-size: 35px;
-
     font-weight: 700;
     color: white;
     opacity: 1;
@@ -909,7 +908,6 @@ footer {
     gap: 3%;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
-
 }
 
 @media only screen and (max-width: 1024px) {
