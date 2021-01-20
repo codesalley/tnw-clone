@@ -624,6 +624,10 @@ footer {
     display: none;
   }
 
+  .section-header {
+    margin: 0 20px 0 20px;
+  }
+
   .mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -669,6 +673,7 @@ footer {
   .trending-section {
     display: flex;
     flex-direction: column;
+    height: 90vh;
   }
 
   .article-cover-g1 h2,
@@ -738,6 +743,7 @@ footer {
     padding: 15px;
     opacity: 1;
     color: white;
+    height: 90vh;
   }
 
   .grid-article-1 h2,
