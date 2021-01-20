@@ -106,6 +106,7 @@ a {
   display: flex;
   padding: 2%;
   color: white;
+  background-size: cover;
   box-shadow: inset -5em -20em 9em -2em rgba(0, 0, 0, 0.685);
   background-image: url(./assets/header-grid-img/Eye-strain-screen-time-hed-796x419.jpg);
 }
@@ -154,6 +155,7 @@ a {
   color: white;
   padding: 2%;
   display: flex;
+  background-size: cover;
   background-image: url(./assets/header-grid-img/Galaxy-hed-796x419.jpg);
 }
 
@@ -600,9 +602,45 @@ footer {
   .site-nav,
   .category-nav-left-ul,
   .date,
-  .article-cover h5 {
+  .category-nav {
     display: none;
   }
+
+  .mobile-nav {
+    height: 5vh;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mob-nav-right {
+    margin-right: 8%;
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .mobile-nav img {
+    padding: 3%;
+    width: 30%;
+    border: 1px solid black;
+    background-color: black;
+  }
+
+  .mob-nav-right .fa-search {
+    opacity: 0.7;
+    transform: scale(0.8);
+  }
+
+  .mob-nav-right .fa-bars {
+    transform: scale(0.8);
+    color: #ff1e00;
+    opacity: 0.8;
+  }
+
   .trending-section {
     display: flex;
     flex-direction: column;
@@ -621,9 +659,22 @@ footer {
   .grid-article-3 h2 {
     font-size: 100%;
   }
+
+  .social-icon {
+    width: 20%;
+    height: 20px;
+  }
+
   .latest-news {
     margin: 60% 5% 0 5%;
   }
+
+  .funding-section,
+  .category-section,
+  .latest-deals-section {
+    margin: 0 5% 0 5%;
+  }
+
   .section-items {
     display: flex;
     flex-direction: column;
@@ -642,6 +693,61 @@ footer {
     display: flex;
     flex-basis: 2%;
   }
+
+  .category-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deals-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    max-width: 90px;
+  }
+
+  .site-map {
+    font-size: 12px;
+    text-align: center;
+    max-width: 100%;
+    gap: 2%;
+  }
+
+  .last-footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 5% 20% 5% 20%;
+  }
+
+  .grid-article-1,
+  .grid-article-2,
+  .grid-article-3 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5%;
+  }
+  .grid-article-1 h2,
+  .grid-article-2 h2,
+  .grid-article-3 h2 {
+    font-size: 22px;
+    color: white;
+  }
+  .story-card {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+  }
+  .story-card img{
+    max-width: 30%;
+    height: 10vh;
+  }
+  .story-card h4{
+    font-size: 18px;
+  }
+ 
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
