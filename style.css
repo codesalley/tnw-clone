@@ -85,16 +85,20 @@ a {
 
 .grid-article-1 {
   grid-column: 1/2;
-  grid-row: 1/3;
-  background-image: url(./assets/header-grid-img/Capitol-dating-app-796x417.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
   display: flex;
+  grid-row: 1/3;
   padding: 2%;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/header-grid-img/Capitol-dating-app-796x417.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .get-update a {
@@ -132,8 +136,13 @@ a {
   padding: 2%;
   color: white;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
-  background-image: url(./assets/header-grid-img/Eye-strain-screen-time-hed-796x419.jpg);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/header-grid-img/Eye-strain-screen-time-hed-796x419.jpg);
 }
 
 .article-cover h5 {
@@ -177,9 +186,13 @@ a {
   color: white;
   padding: 2%;
   display: flex;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
   background-size: cover;
-  background-image: url(./assets/header-grid-img/Galaxy-hed-796x419.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/header-grid-img/Galaxy-hed-796x419.jpg);
 }
 
 .cat-icon .first,
@@ -270,11 +283,15 @@ a {
 }
 
 .date {
-  text-align: end;
+  text-align: right;
   color: rgb(231, 229, 229);
   opacity: 0.5;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
   font-weight: 400;
   font-size: 14px;
+  width: 40%;
 }
 
 .article-items i {
@@ -336,10 +353,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/hard-folk-section/Trump-Twitter-368x276.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/hard-folk-section/Trump-Twitter-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c2 {
@@ -348,10 +369,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/apps-section/android-auto-language-ev-future-car-infotainment-car-play-carplay-android-phone-368x276.png);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/apps-section/android-auto-language-ev-future-car-infotainment-car-play-carplay-android-phone-368x276.png);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c3 {
@@ -360,10 +385,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/gear-section/Eye-strain-screen-time-hed-368x276.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/gear-section/Eye-strain-screen-time-hed-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c4 {
@@ -372,10 +401,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/tech-section/featured-730x432.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/tech-section/featured-730x432.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c5 {
@@ -384,10 +417,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/creative-section/Untitled-design-13.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/creative-section/Untitled-design-13.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c6 {
@@ -396,10 +433,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/podium-section/open-source-code-gq-368x276.png);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/podium-section/open-source-code-gq-368x276.png);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c7 {
@@ -408,10 +449,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/insights-section/Galaxy-hed-368x276.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/insights-section/Galaxy-hed-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c8 {
@@ -420,10 +465,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/launch-section/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/launch-section/toyota-suv-new-ev-car-future-electric-japan-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .c9 {
@@ -432,10 +481,14 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
-  background-image: url(./assets/distract-section/stellaris_hearts-368x276.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.651) 25%,
+      rgba(246, 13, 13, 0) 100%
+    ),
+    url(./assets/distract-section/stellaris_hearts-368x276.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset -1em -5em 5em 2em rgba(0, 0, 0, 0.801);
 }
 
 .float-article {
@@ -613,6 +666,10 @@ footer {
     width: 100%;
   }
 
+  .ghost-div {
+    display: none;
+  }
+
   .see-more {
     display: none;
   }
@@ -631,7 +688,7 @@ footer {
   .mobile-nav {
     display: flex;
     justify-content: space-between;
-    height: 6vh;
+    height: 8vh;
     position: sticky;
     top: 0;
     background-color: white;
@@ -647,7 +704,7 @@ footer {
   }
 
   .mobile-nav img {
-    padding: 10px;
+    padding: 5px;
     width: 30%;
     border: 1px solid black;
     background-color: black;
@@ -673,7 +730,7 @@ footer {
   .trending-section {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
   }
 
   .article-cover-g1 h2,
@@ -936,6 +993,24 @@ footer {
     margin-top: 40px;
   }
 
+  .ghost-div {
+    width: 30%;
+    position: absolute;
+  }
+
+  .grid-article-1 {
+    background: rgb(245, 12, 12);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(245, 12, 12, 0.589) 25%,
+        rgba(246, 13, 13, 0) 100%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.651) 25%, rgba(246, 13, 13, 0) 100%),
+      url(./assets/header-grid-img/Capitol-dating-app-796x417.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .deals-list {
     display: grid;
     gap: 3%;
@@ -973,5 +1048,11 @@ footer {
 
   .latest-deals-section {
     margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .ghost-div {
+    display: none;
   }
 }
