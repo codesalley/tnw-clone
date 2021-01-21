@@ -46,6 +46,7 @@ working on this project, you will learn the basic use of css flex-box and css gr
 
 - GitHub: [@githubhandle](https://github.com/mahtsham)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-ahtsham)
+- Twitter: [@Muhamma69639448](https://twitter.com/Muhamma69639448)
 
 ## 📝 License
 
